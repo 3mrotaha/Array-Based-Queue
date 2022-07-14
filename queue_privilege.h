@@ -41,7 +41,7 @@ ErrorStates_t	QueueSize(int*, Queue_t);
 		  - if it's not empty it returns enum(QUEUE_FRONT_REVEILED)
 		  - if the queue is full it returns enum(QUEUE_EMPTY)
 */
-ErrorStates_t	QueueFront(int*, Queue_t);
+ErrorStates_t	QueueFront(QueueEntry*, Queue_t);
 
 /*
 	pre: queue is initialized and not empty
@@ -49,7 +49,7 @@ ErrorStates_t	QueueFront(int*, Queue_t);
 		  - if it's not empty it returns enum(QUEUE_REAR_REVEILED)
 		  - if the queue is full it returns enum(QUEUE_EMPTY)
 */
-ErrorStates_t	QueueRear(int*, Queue_t);
+ErrorStates_t	QueueRear(QueueEntry*, Queue_t);
 
 /*
 	pre: queue is initialized

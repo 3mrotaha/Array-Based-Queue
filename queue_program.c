@@ -54,7 +54,7 @@ ErrorStates_t	QueueSize(int* Size,Queue_t Queue){
 	}
 }
 
-ErrorStates_t	QueueFront(int* Front, Queue_t Queue){
+ErrorStates_t	QueueFront(QueueEntry* Front, Queue_t Queue){
 	if(Queue.size != 0){
 		*Front = Queue.front;
 		return QUEUE_FRONT_REVEILED;
@@ -63,7 +63,7 @@ ErrorStates_t	QueueFront(int* Front, Queue_t Queue){
 	}
 }
 
-ErrorStates_t	QueueRear(int* Rear, Queue_t Queue){
+ErrorStates_t	QueueRear(QueueEntry* Rear, Queue_t Queue){
 	if(Queue.size != 0){
 		*Rear = Queue.rear;
 		return QUEUE_REAR_REVEILED;
